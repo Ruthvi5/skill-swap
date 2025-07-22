@@ -1,0 +1,211 @@
+/* UserProfile.css */
+
+/* General Layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styles */
+.user-header {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  color: white;
+  padding: 2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.user-header .back-button {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.user-header .back-button:hover {
+  color: white;
+}
+
+.user-header .profile-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.user-header img.profile-pic {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-header .user-details {
+  flex: 1;
+}
+
+.user-header .user-details h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.user-header .user-details .title {
+  font-size: 1.125rem;
+  color: #c7d2fe;
+  margin-bottom: 0.75rem;
+}
+
+.user-header .ratings {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.user-header .ratings .stars svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.action-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-buttons .swap {
+  background-color: white;
+  color: #4f46e5;
+}
+
+.action-buttons .swap:hover {
+  background-color: #f3f4f6;
+}
+
+.action-buttons .message {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-buttons .message:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections */
+.section {
+  background-color: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.section p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Skill Tags */
+.skill-tag {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  margin: 0.25rem;
+}
+
+.skill-offered {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.skill-wanted {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+  border: 1px solid #bfdbfe;
+}
+
+.availability-tag {
+  background-color: #f5f3ff;
+  color: #6b21a8;
+  border: 1px solid #ddd6fe;
+}
+
+/* Sidebar */
+.sidebar .stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar .stat span:first-child {
+  color: #6b7280;
+}
+
+.sidebar .stat span:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar .activity {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .activity-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.sidebar .activity-content p:first-child {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .activity-content p:last-child {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
